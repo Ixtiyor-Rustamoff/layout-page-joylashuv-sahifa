@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joylashuv</title>
+    <style>
+/* Rustamov Ixtiyor, 2021-yil,16-avgust */
+
+      * {
+        margin: 2px 2px;
+        box-sizing: border-box;
+      }
+      .i {
+        background: rgb(2,0,36);
+        background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(6,6,159,1) 35%, rgba(0,212,255,1) 100%);
+        color: #fff;
+        font-family: Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        display: inline-block;
+      }
+      header {
+        width: 99%;
+        height: 80px;
+        line-height: 80px;
+      }
+      navbar {
+        width: 99%;
+        height: 50px;
+        line-height: 50px;
+      }
+      .fleks {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin:0;
+      }
+      main {
+        width: 70%;
+        height: 300px;
+        line-height: 300px;
+      }
+      aside {
+        width: 28%;
+        height: 300px;
+        line-height: 300px;
+      }
+      footer {
+        width: 99%;
+        height: 100px;
+        line-height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="i">
+      header
+    </header>
+    <navbar class="i">
+      navbar
+    </navbar>
+    <div class="fleks">
+    <main class="i">
+      main
+    </main>
+    <aside class="i">
+      aside
+    </aside>
+    </div>
+    <footer class="i">
+      footer
+    </footer>
+    
+    <script>
+      const info = document.querySelectorAll('.i');
+      info[0].addEventListener('click',()=> {
+        alert("Header - bu saytning bosh qismi hisoblanib  asosan sayt logotipi va saytning telefon raqami yoziladi.");
+      })
+      info[1].addEventListener('click',()=> {
+        alert("Navbar - bu veb sahifaning menyu qismi hisoblanib  asosan saytda kerakli kontenti darhol topishda qo'l keladi");
+      })
+      info[2].addEventListener('click',()=> {
+        alert("Main - bu veb sahifaning asosiy qismi hisoblanib ma'lumot yoziladi.");
+      })
+      info[3].addEventListener('click',()=> {
+        alert("Aside - bu veb sahifaga qo'shimcha ma'lumot yoziladigan qismi bo'lib, asosan reklamali banner qo'yilishda ishlatiladi.");
+      })
+      info[4].addEventListener('click',()=> {
+        alert("Footer- bu saytning eng pastki qismi bo'lib, unda sayt qachon ishga tushirilgani va kimlar asos solgani haqida yozib boriladi.");
+      })
+    </script>
+  </body>
+</html>
